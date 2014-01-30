@@ -1,0 +1,48 @@
+/**
+ * @file Styling for the PDF.js widget
+ * @author griffinj@lafayette.edu
+ *
+ */
+
+.islandora-pdf-content {
+
+    height: 431px;
+    padding: inherit;
+}
+
+body.no-sidebars .islandora-pdf-content {
+
+    width: 100%;
+}
+
+#scaleSelectContainer {
+
+    max-width: inherit !important;
+    min-width: inherit !important;
+    width: 50%;
+}
+
+#scaleSelect {
+
+    height: 16px;
+}
+
+html[dir="ltr"] #toolbarViewerLeft, html[dir="rtl"] #toolbarViewerRight {
+
+    position: inherit;
+}
+
+html[dir="ltr"] .innerCenter {
+
+    right: -75%;
+}
+
+#thumbnailView {
+
+    width: inherit;
+}
+
+.thumbnailImage {
+
+    -moz-box-sizing: inherit;
+}
