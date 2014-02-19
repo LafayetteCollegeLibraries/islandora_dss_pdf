@@ -30,8 +30,7 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
   drupal_add_js(libraries_get_path('pdf.js') . '/web/debugger.js');
   drupal_add_js(libraries_get_path('pdf.js') . '/web/viewer.js');
 
-
-  $islandora_object = $variables['islandora_object'];
+  $islandora_object = $variables['object'];
   
   $pdf_viewer = '
     <div id="outerContainer" class="loadingInProgress">

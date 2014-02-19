@@ -19,7 +19,7 @@
     <?php endif; ?>
   </div>
   <fieldset class="collapsible collapsed islandora-pdf-metadata">
-  <legend><span class="fieldset-legend"><?php print t('Extended details'); ?></span></legend>
+  <h3 class="islandora-image-details">Details</h3>
     <div class="fieldset-wrapper">
       <dl class="islandora-inline-metadata islandora-pdf-fields">
         <?php $row_field = 0; ?>
