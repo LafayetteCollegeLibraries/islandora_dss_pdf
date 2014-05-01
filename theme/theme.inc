@@ -12,7 +12,15 @@
    */
 function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
 
-  dpm($variables);
+  if(array_key_exists('object', $variables)) {
+
+    $islandora_object = $variables['object'];
+  } else {
+
+    $islandora_object = $variables['islandora_object'];
+  }
+  //drupal_add_js(array('islandoraDssPdf' => array('object' => $islandora_object->id)), array('type' => 'setting', 'group' => JS_LIBRARY));
+  //drupal_add_js(array('islandoraDssPdf' => array('object' => $islandora_object->id)), 'setting');
 
   drupal_add_css(libraries_get_path('pdf.js') . '/web/viewer.css');
   drupal_add_css(drupal_get_path('module', 'islandora_dss_pdf') . '/css/islandora_dss_pdf.css');
@@ -25,13 +33,19 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
 				  'href' => base_path() . libraries_get_path('pdf.js') . '/web/locale/locale.properties'));
   drupal_add_js(libraries_get_path('pdf.js') . '/web/l10n.js');
 
+  /*
   drupal_add_js(libraries_get_path('pdf.js') . '/build/pdf.worker.js');
   drupal_add_js(libraries_get_path('pdf.js') . '/build/pdf.js');
   drupal_add_js(libraries_get_path('pdf.js') . '/web/debugger.js');
   drupal_add_js(libraries_get_path('pdf.js') . '/web/viewer.js');
+  */
 
-  $islandora_object = $variables['object'];
-  
+  drupal_add_js(libraries_get_path('pdf.js') . '/build/pdf.worker.js');
+  drupal_add_js(libraries_get_path('pdf.js') . '/build/pdf.js');
+  //drupal_add_js(libraries_get_path('pdf.js') . '/web/l10n.js');
+  drupal_add_js(libraries_get_path('pdf.js') . '/web/debugger.js');
+  drupal_add_js(libraries_get_path('pdf.js') . '/web/viewer.js');
+
   $pdf_viewer = '
     <div id="outerContainer" class="loadingInProgress">
 
@@ -376,5 +390,6 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
   $variables['pdf_formatter_pages'] = _islandora_dss_pdf_formatter_pages(array('islandora_object' => $islandora_object,
 									       'scale' => '1.0'));
   */
+
 
   }
