@@ -20,7 +20,9 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
     $islandora_object = $variables['islandora_object'];
   }
   //drupal_add_js(array('islandoraDssPdf' => array('object' => $islandora_object->id)), array('type' => 'setting', 'group' => JS_LIBRARY));
-  //drupal_add_js(array('islandoraDssPdf' => array('object' => $islandora_object->id)), 'setting');
+  drupal_add_js(array('islandoraDssPdf' => array('object' => $islandora_object->id,
+						 'collection' => array_shift($islandora_object->getParents()
+									     ))), 'setting');
 
   drupal_add_css(libraries_get_path('pdf.js') . '/web/viewer.css');
   drupal_add_css(drupal_get_path('module', 'islandora_dss_pdf') . '/css/islandora_dss_pdf.css');
