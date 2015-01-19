@@ -46,3 +46,18 @@ html[dir="ltr"] .innerCenter {
 
     -moz-box-sizing: inherit;
 }
+
+/**
+ * Ensuring that the status message is visible
+ * Resolves DSSSM-1148
+ *
+ */
+#loadingBar .statusMessage {
+    
+    background-color: #474747;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #F2F2F2;
+    font-size: 12px;
+    padding-top: 6px;
+    text-align: center;
+}

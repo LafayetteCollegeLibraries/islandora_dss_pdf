@@ -209,6 +209,7 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
                 <div class="glimmer">
                 </div>
               </div>
+              <div class="statusMessage"><span>Please wait while the file downloads.</span></div>
             </div>
           </div>
         </div>
