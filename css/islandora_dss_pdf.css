@@ -56,6 +56,14 @@ html[dir="ltr"] .innerCenter {
     
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
+    color: #DDDDDD;
+    background-image: linear-gradient(to bottom, #545454, #333333);
     margin-top: 48px;
     text-align: center;
+    border-radius: 2px;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 160px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
