@@ -86,8 +86,8 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
 
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
           <div id="secondaryToolbarButtonContainer">
-            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Presentation Mode" tabindex="18" data-l10n-id="presentation_mode">
-              <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Full Screen" tabindex="18" data-l10n-id="presentation_mode">
+              <span data-l10n-id="presentation_mode_label">Full Screen</span>
             </button>
 
             <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView" title="Print" tabindex="20" data-l10n-id="print">
@@ -155,8 +155,8 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
                 <span id="numPages" class="toolbarLabel"></span>
               </div>
               <div id="toolbarViewerRight">
-                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="12" data-l10n-id="presentation_mode">
-                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Full Screen" tabindex="12" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Full Screen</span>
                 </button>
 
                 <button id="print" class="toolbarButton print hiddenMediumView" title="Print" tabindex="14" data-l10n-id="print">
