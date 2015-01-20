@@ -49,7 +49,7 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
   drupal_add_js(libraries_get_path('pdf.js') . '/web/viewer.js');
 
   $pdf_viewer = '
-    <div id="outerContainer" class="loadingInProgress">
+  	    <div id="outerContainer" class="loadingInProgress">
 
       <div id="sidebarContainer">
         <div id="toolbarSidebar">
@@ -313,10 +313,10 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
           </div>
         </div>
       </div>  <!-- overlayContainer -->
-
     </div> <!-- outerContainer -->
 
     <div id="printContainer"></div>
+    <div id="printMessage" class="hidePrintMessage"><p>To print the actual PDF, please print from full screen, or download the PDF and print from that file.</p></div>
 <div id="mozPrintCallback-shim" hidden>
   <style scoped>
 #mozPrintCallback-shim {
