@@ -225,7 +225,10 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
         </menu>
 
         <div id="viewerContainer" tabindex="0">
-          <div class="statusMessage"><span>Please wait while the file downloads.</span></div>
+          <div class="status">
+            <div class="statusMessage"><span>Please wait while the file downloads.</span></div>
+            <div class="statusImage"></div>
+          </div>
           <div id="viewer"></div>
         </div>
 
