@@ -86,7 +86,7 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
 
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
           <div id="secondaryToolbarButtonContainer">
-            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Full Screen" tabindex="18" data-l10n-id="presentation_mode">
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Full Screen" tabindex="18">
               <span data-l10n-id="presentation_mode_label">Full Screen</span>
             </button>
 
@@ -155,7 +155,7 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
                 <span id="numPages" class="toolbarLabel"></span>
               </div>
               <div id="toolbarViewerRight">
-                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Full Screen" tabindex="12" data-l10n-id="presentation_mode">
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Full Screen" tabindex="12">
                   <span data-l10n-id="presentation_mode_label">Full Screen</span>
                 </button>
 
