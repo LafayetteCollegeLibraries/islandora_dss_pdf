@@ -317,6 +317,7 @@ function islandora_dss_pdf_preprocess_islandora_pdf(&$variables) {
 
     <div id="printContainer"></div>
     <div id="printMessage" class="hidePrintMessage"><p>To print the actual PDF, please print from full screen, or download the PDF and print from that file.</p></div>
+    <div id="pdfHelpLink"><a href="/pdfhelp">Click here for assistance with the PDF viewer.</a></div>
 <div id="mozPrintCallback-shim" hidden>
   <style scoped>
 #mozPrintCallback-shim {
